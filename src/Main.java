@@ -3,7 +3,7 @@ public class Main {
         System.out.println("Hello world!");
         System.out.println();
 
-        int[] arr = generateRandomArray();
+        generateRandomArray();
 
         task1();
         task2();
@@ -56,13 +56,13 @@ public class Main {
     }
     public static void task3() {
         System.out.println("Задание 3");
-        int sum = 0;
+        double sum = 0;
         int myArray [] = generateRandomArray();
         for (int i = 0; i < myArray.length; i++) {
             sum = sum + myArray[i];
 
         }
-        double average = sum / 30;
+        double average = sum / myArray.length;
         System.out.println("Средняя сумма трат за месяц составила " + average + " рублей");
         System.out.println();
     }
